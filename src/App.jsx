@@ -6,7 +6,8 @@ const tg = window.Telegram.WebApp;
 
 function App() {
   useEffect(() => {
-    tg.ready().expand();
+    tg.ready();
+    tg.expand();
   }, []);
 
   return (
